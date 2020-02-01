@@ -12,6 +12,17 @@
     padding: 0 2rem;
 }
 
+//overlay
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
 .text{
     &-uppercase{
         text-transform: uppercase;
