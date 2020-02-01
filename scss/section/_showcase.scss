@@ -26,7 +26,6 @@
        position: relative;
        background: url('../img/main-img2.jpg') no-repeat center center/cover;  background-clip: content-box;
        height: 60rem;
-       margin-bottom: 5rem;
 
        &-inner{
            color: #fff;
@@ -56,4 +55,33 @@
            }
        }
    }
+
+   //light box section
+   &-third{
+        & .gallery{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            & a:first-child{
+                // grid-row-start: 1;
+                // grid-row-end: 3;
+                // grid-column-start: 1;
+                // grid-column-end: 3;
+                grid-row: 1/3;
+                grid-column: 1/3;
+            }
+
+            & a:nth-child(2){
+                grid-column: 3/5;;
+            }
+
+        }
+//this will fit img width and height inside the grid.
+        & .gallery img,
+        & .gallery a{
+            width: 100%;
+            height: 100%;
+        }
+   }
+
 }
