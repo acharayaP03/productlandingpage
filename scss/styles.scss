@@ -1,3 +1,5 @@
-body{
-    background: red;
-}
+
+@import 'variables';
+@import 'base';
+@import 'utilities';
+@import 'navbar';
