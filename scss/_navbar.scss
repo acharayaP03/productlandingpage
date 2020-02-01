@@ -1,0 +1,30 @@
+.navbar{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    & .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    & .logo{
+        font-size: 2.5rem;
+    }
+
+    & .nav{
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & a{
+            padding: 0 1rem;
+            &:hover{
+                color: darken( #333, 80%)
+            }
+        }
+
+       
+    }
+}
